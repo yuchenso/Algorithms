@@ -3,7 +3,7 @@
  * Space: O(n)
  * Tags: HashMap;
  */
-public class SolutionClean {
+public class Solution1 {
     public int[] twoSum(int[] numbers, int target) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for(int i = 0; i < numbers.length; i++){
