@@ -30,7 +30,7 @@ public class Solution {
 				break;
 			}
 		}
-
+		
 		return indices;
     }
 }
