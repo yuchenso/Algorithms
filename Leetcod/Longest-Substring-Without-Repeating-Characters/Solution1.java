@@ -1,6 +1,6 @@
 public class Solution1 {
     public int lengthOfLongestSubstring(String s) {
-        Set<Character> set = new HashSet<Character>();
+        Set<Character> set = new HashSet<Character>(); //  boolean[] exist = new boolean[256]; 
         int start = 0, rst = 0;
         for (int end = 0; end < s.length(); end++) {
             if (!set.contains(s.charAt(end))) {
