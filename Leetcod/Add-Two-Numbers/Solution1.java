@@ -1,7 +1,7 @@
 /**
  * 
  */
-public class Solution {
+public class Solution1 {
     public static String addBinary(String a, String b) {
         a = new StringBuilder(a).reverse().toString();
         b = new StringBuilder(b).reverse().toString();
