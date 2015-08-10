@@ -1,3 +1,8 @@
+/**
+ * Time: O(n)
+ * Space: O(n)
+ * Tags: HashMap;
+ */
 public class SolutionClean {
     public int[] twoSum(int[] numbers, int target) {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
