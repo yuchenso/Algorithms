@@ -1,3 +1,8 @@
+/**
+ * Time: O(n^2)
+ * Space: O(1)
+ * Tags: Palindrome;
+ */
 public class Solution1 {
     public String longestPalindrome(String s) {
         int start = 0, end = 0;
