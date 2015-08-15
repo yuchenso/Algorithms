@@ -1,0 +1,27 @@
+public class Solution1 {
+    public void connect(TreeLinkNode root) {
+        if(root == null || (root.left == null && root.right == null)) return;
+        TreeLinkNode lastNode = null;
+        if(root.left != null) lastNode = root.left;
+        if(root.right != null) {
+            if(lastNode != null) lastNode.next = root.right;
+            lastNode = root.right;
+        }
+        if(lastNode != null) {
+            TreeLinkNode pointer = root;
+            while(pointer.next != null) {
+                if(pointer.next.left != null) {
+                    lastNode.next = pointer.next.left;
+                    break;
+                }
+                if(pointer.next.right != null) {
+                    lastNode.next = pointer.next.right;
+                    break;
+                }
+                pointer = pointer.next;
+            }
+        }
+        connect(root.right);
+        connect(root.left);
+    }
+}
